@@ -1,0 +1,126 @@
+.hero {
+    padding-top: 40px !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 90px;
+
+    &.trading-hero {
+        background-image: url(/images/hero/tradings-hero-bg.png);
+        background-repeat: no-repeat;
+        background-position: calc(50% + 300px) bottom;
+    }
+
+    &.partner-hero {
+        background-image: url(/images/hero/partner-hero-bg.png);
+        background-repeat: no-repeat;
+        background-position: calc(50% + 300px) bottom;
+    }
+
+    &.deposit-hero {
+        background-image: url(/images/hero/deposit-hero-bg.png);
+        background-repeat: no-repeat;
+        background-position: calc(50% + 300px) bottom;
+    }
+
+    &.pamm-hero {
+        background-image: url(/images/hero/pamm-hero-bg.png);
+        background-repeat: no-repeat;
+        background-position: calc(50% + 300px) bottom;
+    }
+
+    &__title-group {
+        margin-top: 130px;
+        margin-bottom: 60px;
+        align-items: flex-start;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__subtitle {
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: 991px) {
+        padding-top: 60px !important;
+
+        &.trading-hero {
+            background-position: center bottom;
+            background-size: 534px;
+        }
+    
+        &.partner-hero {
+            background-position: center bottom;
+            background-size: 534px;
+        }
+
+        &.deposit-hero {
+            background-position: center bottom;
+            background-size: 534px;
+        }
+
+        &.pamm-hero {
+            background-position: center bottom;
+            background-size: 534px;
+        }
+
+        &__title-group {
+            margin-top: 0;
+            margin-bottom: 363px;
+            align-items: center;
+        }
+
+        &__title {
+            text-align: center;
+        }
+    
+        &__subtitle {
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 480px) {
+        &.trading-hero {
+            background-size: 450px;
+        }
+    
+        &.partner-hero {
+            background-size: 450px;
+        }
+
+        &.deposit-hero {
+            background-size: 450px;
+        }
+
+        &.pamm-hero {
+            background-size: 450px;
+        }
+
+        &__title-group {
+            margin-bottom: 300px;
+        }
+    }
+
+    @media (max-width: 360px) {
+        &.trading-hero {
+            background-size: 330px;
+        }
+    
+        &.partner-hero {
+            background-size: 330px;
+        }
+
+        
+        &.deposit-hero {
+            background-size: 330px;
+        }
+
+        &.pamm-hero {
+            background-size: 330px;
+        }
+
+        &__title-group {
+            margin-bottom: 210px;
+        }
+    }
+}

@@ -1,0 +1,147 @@
+.footer {
+    padding-top: 100px;
+    padding-bottom: 25px;
+    border-top: 1px solid rgb(219, 232, 238);
+    background-color: $text-white;
+
+    @media (max-width: 768px) {
+        padding-top: 60px;
+        margin-top: 60px;
+    }
+
+    &-nav {
+        padding-bottom: 80px;
+        border-bottom: 1px solid #dbe8ee;
+
+        &__main {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 20px;
+        }
+        
+        &__social {
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-start;
+            gap: 15px;
+
+            &-item {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                border: 1px solid #2E2E48;
+                background-color: transparent;
+                transition: background-color .3s;
+
+                svg {
+                    path {
+                        transition: fill .3s;
+                        fill: #24EAA4;
+                    }
+                }
+
+                &:hover {
+                    background-color: #24EAA4;
+
+                    svg {
+                        path {
+                            fill: #121126;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__links {
+            display: flex;
+            flex-direction: column;
+
+            &--title {
+                color: $text-gray;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 140%;
+                margin-bottom: 30px;
+            }
+
+            &--list {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: $text-black;
+                        font-size: 16px;
+                        font-weight: 550;
+                        line-height: 130%;
+                        transition: color .3s;
+
+                        &:hover {
+                            color: $primary-hovered;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__box {
+            row-gap: 50px;
+        }
+
+        &__bank-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+            max-width: 280px;
+
+            &--item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 75px;
+            }
+
+            @media (max-width: 768px) {
+              max-width: 100%;
+              margin-bottom: 50px;
+              flex-wrap: nowrap;
+
+              &--item  {
+                width: auto;
+
+                img {
+                    width: 100%;
+                }
+              }
+            }
+        }
+    }
+
+    &-copyright {
+        &--title {
+            margin-top: 25px;
+            color: $text-gray;
+            font-size: 18px;
+            line-height: 120%;
+            font-weight: 550;
+        }
+
+        &--text {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: 360px) {
+            &--title {
+                font-size: 16px;
+            }
+        }
+    }
+}

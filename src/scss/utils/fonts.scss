@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'OktaNeue';
+    src: local('OktaNeue Regular'), local('OktaNeue-Regular'),
+        url('/src/fonts/OktaNeue-Regular.woff2') format('woff2'),
+        url('/src/fonts/OktaNeue-Regular.woff') format('woff'),
+        url('/src/fonts/OktaNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OktaNeue';
+    src: local('OktaNeue Medium'), local('OktaNeue-Medium'),
+        url('/src/fonts/OktaNeue-Medium.woff2') format('woff2'),
+        url('/src/fonts/OktaNeue-Medium.woff') format('woff'),
+        url('/src/fonts/OktaNeue-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OktaNeue';
+    src: local('OktaNeue SemiBold'), local('OktaNeue-SemiBold'),
+        url('/src/fonts/OktaNeue-SemiBold.woff2') format('woff2'),
+        url('/src/fonts/OktaNeue-SemiBold.woff') format('woff'),
+        url('/src/fonts/OktaNeue-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OktaNeue';
+    src: local('OktaNeue Bold'), local('OktaNeue-Bold'),
+        url('/src/fonts/OktaNeue-Bold.woff2') format('woff2'),
+        url('/src/fonts/OktaNeue-Bold.woff') format('woff'),
+        url('/src/fonts/OktaNeue-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}

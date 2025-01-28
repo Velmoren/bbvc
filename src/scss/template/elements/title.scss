@@ -1,0 +1,124 @@
+.title {
+    &--extra-lg {
+        font-size: 90px;
+        font-weight: 550;
+        line-height: 100%;
+    }
+
+    &--lg {
+        font-size: 80px;
+        font-weight: 550;
+        line-height: 100%;
+    }
+
+    &--md {
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 100%;
+    }
+
+    &--extra-md {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 100%;
+    }
+
+    &--sm {
+        font-size: 24px;
+        font-weight: 550;
+        line-height: 140%;
+    }
+
+    &--extra-sm {
+        font-size: 20px;
+        font-weight: 550;
+        line-height: 140%;
+    }
+    
+    &--gray {
+        color: $text-gray;
+    }
+
+    &--white {
+        color: $text-white;
+    }
+
+    &--black {
+        color: $text-black;
+    }
+
+    &--gradient {
+        background: linear-gradient(0.00deg, #344455, #22639e);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    @media (max-width: 1320px) {
+        &--extra-lg {
+            font-size: 70px;
+        }
+
+        &--lg {
+            font-size: 60px;
+        }
+    
+        &--md {
+            font-size: 50px;
+        }
+
+        &--extra-md {
+            font-size: 35px;
+        }
+    
+        &--sm {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        &--extra-lg {
+            font-size: 60px;
+        }
+
+        &--lg {
+            font-size: 50px;
+        }
+    
+        &--md {
+            font-size: 40px;
+        }
+
+        &--extra-md {
+            font-size: 30px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        &--extra-lg {
+            font-size: 44px;
+        }
+
+        &--lg {
+            font-size: 40px;
+        }
+    
+        &--md {
+            font-size: 30px;
+        }
+
+        &--extra-md {
+            font-size: 24px;
+        }
+
+        &--extra-sm {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 360px) {
+        &--md {
+            font-size: 28px;
+        }
+    }
+}

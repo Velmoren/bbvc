@@ -1,0 +1,46 @@
+.list-marked {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        min-height: 118px;
+        padding: 40px 20px 15px 20px;
+        position: relative;
+        border-radius: 15px;
+        border: 1px solid #dbe8ee;
+        font-size: 18px;
+        line-height: 120%;
+        font-weight: 550;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            left: 20px;
+            top: 15px;
+            border-radius: 50%;
+            background-color: $text-blue;
+            background-image: url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3.5L3.66353 6L9 1' stroke='%23FDFDFF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    @media (max-width: 1320px) {
+  
+    }
+
+    @media (max-width: 576px) {
+   
+    }
+
+    @media (max-width: 360px) {
+
+    }
+}

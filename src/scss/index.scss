@@ -1,0 +1,42 @@
+@import "./utils/reset";
+@import "./utils/fonts";
+@import "./utils/variables";
+@import "./utils/bootstrap";
+
+@import "./template/base";
+@import "./template/header";
+@import "./template/footer";
+
+// ANIMATIONS
+@import "./libs/animate.min.css";
+@import "./libs/hover.css";
+
+// ELEMENTS
+@import "./template/elements/title.scss";
+@import "./template/elements/text.scss";
+// @import "./template/elements/title-group.scss";
+@import "./template/elements/buttons.scss";
+// @import "./template/elements/card.scss";
+// @import "./template/elements/list.scss";
+// @import "./template/elements/list-marked.scss";
+// @import "./template/elements/custom-table.scss";
+// @import "./template/elements/card-info.scss";
+// @import "./template/elements/form-control.scss";
+
+// SECTIONS
+// @import "./template/sections/hero.scss";
+// @import "./template/sections/statistic.scss";
+// @import "./template/sections/technology.scss";
+// @import "./template/sections/worldwide.scss";
+// @import "./template/sections/ambitions.scss";
+// @import "./template/sections/environment.scss";
+// @import "./template/sections/account.scss";
+// @import "./template/sections/features.scss";
+// @import "./template/sections/deposits.scss";
+// @import "./template/sections/seamlessly-trade.scss";
+// @import "./template/sections/pamm-info.scss";
+// @import "./template/sections/advantages.scss";
+// @import "./template/sections/contacts.scss";
+
+// PAGES
+@import "./template/pages/main-page.scss";

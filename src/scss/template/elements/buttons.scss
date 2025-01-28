@@ -1,0 +1,72 @@
+.btn {
+    border-radius: 22px;
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 550;
+    padding: 12px 20px;
+    box-shadow: inset 0px 0px 5px 1px rgb(27, 214, 255);
+    background: radial-gradient(118.60% 110.86% at 21% -7.000000000000001%,rgb(27, 214, 255),rgb(38, 176, 254) 100%);
+    border-width: 0;
+    color: $text-white;
+
+    &:hover {
+        background-color: $text-dark-blue;
+        color: $text-white;
+    }
+
+    &.btn-outline {
+        box-shadow: none;
+        background: transparent;
+        color: $text-white;
+        border-color: $text-white;
+        border-width: 1px;
+
+        &:hover {
+            background: $text-dark-blue;
+            color: $text-white;
+            border-color: $text-dark-blue;
+        }
+    }   
+
+    &.btn-info {
+        box-shadow: none;
+        background: $text-white;
+        color: $text-dark-blue;
+
+        &:hover {
+            background: $text-dark-blue;
+            color: $text-white;
+        }
+    }
+
+    &.btn--blue {
+        box-shadow: none;
+        background: $primary;
+        color: $text-white;
+
+        &:hover {
+            background: $text-white;
+            color: $text-dark-blue;
+        }
+    }
+
+    &.btn--lg {
+        border-radius: 30px;
+        font-size: 18px;
+        line-height: 100%;
+        font-weight: 550;
+        padding: 21px 50px;
+    }
+
+    &.btn--sm {
+        border-radius: 10px;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 550;
+        padding: 8px 20px;
+    }
+
+    &:active {
+        box-shadow: none !important;
+    }
+}

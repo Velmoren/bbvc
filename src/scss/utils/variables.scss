@@ -1,0 +1,63 @@
+// // Variable overrides second
+$text-white: #fdfdff;
+$text-ultra-light-blue: #e8f7ff;
+$text-light-blue: #bdf3ff;
+$text-blue: #1bd6ff;
+$text-dark-blue: #3a95ef;
+$text-gray: #696e7e;
+$text-black: #344455;
+
+$primary-gradient: linear-gradient(0deg, #344455 0%, #22639E 100%);
+
+$primary: $text-dark-blue;
+$primary-hovered: $text-dark-blue;
+$secondary-hovered: $text-black;
+
+$enable-shadows: true;
+$prefix: "era-";
+
+$container-max-widths: (
+  xxs: 100%,
+  xs: 100%,
+  sm: 480px,
+  md: 714px,
+  lg: 930px,
+  xl: 1290px
+);
+
+$grid-breakpoints: (
+  xxs: 0,
+  xs: 480px,
+  sm: 576px,
+  md: 768px,
+  lg: 991px,
+  xl: 1320px,
+  xxl: 1920px,
+);
+
+$grid-gutter-width: 1.5rem;
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  28px: 28px
+);
+$gutters: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  10px: 10px,
+  15px: 15px,
+  20px: 20px,
+  40px: 40px,
+  30px: 30px,
+  50px: 50px,
+  77px: 77px
+);

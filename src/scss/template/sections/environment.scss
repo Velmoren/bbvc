@@ -1,0 +1,12 @@
+.environment {
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    @media (max-width: 480px) {
+        &__item {
+            flex-direction: row;
+            gap: 20px;
+        }
+    }
+}

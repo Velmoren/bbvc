@@ -1,0 +1,72 @@
+.account {
+    &__content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &__title {
+            max-width: 550px;
+            margin-bottom: 30px;
+        }
+
+        &__img {
+            height: 350px;
+            border-radius: 40px;
+            background: url('/images/account/account-bg.png') center top/cover no-repeat, 
+            radial-gradient(109.90% 78.87% at 50% 39%,rgb(27, 214, 255),rgb(38, 176, 254) 100%),
+            linear-gradient(0.00deg, rgb(255, 255, 255),rgb(27, 214, 255) 75%,rgb(58, 149, 239) 100%),rgb(58, 149, 239);
+        }
+    }
+
+    &__item {
+        padding: 30px;
+        border: 1px solid rgb(243, 247, 249);
+        border-radius: 30px;
+        background: rgb(253, 253, 255);
+        display: flex;
+        gap: 38px;
+        min-height: 170px;
+        transition: all .3s ease;
+
+        &:hover {
+            box-shadow: 0px 6px 14px 0px rgba(189, 195, 209, 0.1),0px 25px 25px 0px rgba(189, 195, 209, 0.09),0px 56px 34px 0px rgba(189, 195, 209, 0.05),0px 99px 40px 0px rgba(189, 195, 209, 0.01),0px 155px 43px 0px rgba(189, 195, 209, 0);
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            
+            &--step {
+                text-transform: uppercase;
+            }
+        }
+
+        &-content {
+            flex-grow: 1;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+        }
+    }
+
+    @media (max-width: 576px) {
+        &__content {
+            &__img {
+                height: 230px;
+                border-radius: 30px;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        &__content {
+            &__img {
+                height: 160px;
+                border-radius: 25px;
+            }
+        }
+    }
+}
