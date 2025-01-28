@@ -10,6 +10,11 @@
     &-logo {
         display: flex;
         align-items: center;
+        gap: 15px;
+        color: $black;
+        font-size: 30px;
+        line-height: 36px;
+        text-decoration: none;
     }
 
     &-controls {
@@ -27,7 +32,7 @@
     }
 
     .navbar-toggler {
-        background-color: $text-white;
+        background-color: $white;
         width: 48px;
         height: 48px;
         border-radius: 15px;
@@ -39,7 +44,7 @@
 
         span {
             height: 2px;
-            background-color: $secondary;
+            // background-color: $secondary;
             border-radius: 2px;
         }
 
@@ -60,39 +65,39 @@
         .nav-item {
             .nav-link {
                 transition: color .3s;
-                font-size: 14px;
-                line-height: 140%;
-                font-weight: 550;
-                color: $text-white;
+                font-size: 18px;
+                line-height: 120%;
+                font-weight: normal;
+                color: $black;
                 padding: 10px 15px;
 
                 &.active {
-                    color: $secondary-hovered;
+                    color: $orange;
                 }
 
                 &:hover {
-                    color: $secondary-hovered;
+                    color: $orange;
                 }
             }
 
             .dropdown-menu {
-                background-color: $text-white;
+                background-color: $white;
 
                 .dropdown-item {
                     font-size: 16px;
                     line-height: 22px;
                     font-weight: 500;
-                    color: $secondary;
+                    // color: $secondary;
 
-                    &.active {
-                        background-color: $text-white;
-                        color: $secondary-hovered;
-                    }
+                    // &.active {
+                    //     background-color: $white;
+                    //     color: $secondary-hovered;
+                    // }
     
-                    &:hover {
-                        background-color: $text-white;
-                        color: $secondary-hovered;
-                    }
+                    // &:hover {
+                    //     background-color: $white;
+                    //     color: $secondary-hovered;
+                    // }
 
                     &:focus-visible {
                         outline: none;

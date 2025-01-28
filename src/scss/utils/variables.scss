@@ -1,20 +1,12 @@
 // // Variable overrides second
-$text-white: #fdfdff;
-$text-ultra-light-blue: #e8f7ff;
-$text-light-blue: #bdf3ff;
-$text-blue: #1bd6ff;
-$text-dark-blue: #3a95ef;
-$text-gray: #696e7e;
-$text-black: #344455;
-
-$primary-gradient: linear-gradient(0deg, #344455 0%, #22639E 100%);
-
-$primary: $text-dark-blue;
-$primary-hovered: $text-dark-blue;
-$secondary-hovered: $text-black;
+$black: #002329; // rgb(0, 35, 41)
+$white: #ffffff; // rgb(255, 255, 255)
+$gray: #818181; // #818181
+$orange: #e35728; // rgb(227, 87, 40)
+$blue: #0ec7e7; // rgb(14, 199, 231)
 
 $enable-shadows: true;
-$prefix: "era-";
+$prefix: "bbvc-";
 
 $container-max-widths: (
   xxs: 100%,

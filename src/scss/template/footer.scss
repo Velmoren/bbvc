@@ -2,7 +2,17 @@
     padding-top: 100px;
     padding-bottom: 25px;
     border-top: 1px solid rgb(219, 232, 238);
-    background-color: $text-white;
+    background-color: $black;
+
+    &-logo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: $white;
+        font-size: 30px;
+        line-height: 36px;
+        text-decoration: none;
+    }
 
     @media (max-width: 768px) {
         padding-top: 60px;
@@ -61,7 +71,7 @@
             flex-direction: column;
 
             &--title {
-                color: $text-gray;
+                color: $gray;
                 font-size: 24px;
                 font-weight: 700;
                 line-height: 140%;
@@ -76,14 +86,14 @@
                 li {
                     a {
                         text-decoration: none;
-                        color: $text-black;
+                        color: $white;
                         font-size: 16px;
                         font-weight: 550;
                         line-height: 130%;
                         transition: color .3s;
 
                         &:hover {
-                            color: $primary-hovered;
+                            color: $orange;
                         }
                     }
                 }
@@ -108,7 +118,7 @@
                 width: 75px;
             }
 
-            @media (max-width: 768px) {
+            @media (max-width: 990px) {
               max-width: 100%;
               margin-bottom: 50px;
               flex-wrap: nowrap;
@@ -127,7 +137,7 @@
     &-copyright {
         &--title {
             margin-top: 25px;
-            color: $text-gray;
+            color: $gray;
             font-size: 18px;
             line-height: 120%;
             font-weight: 550;
@@ -136,6 +146,7 @@
         &--text {
             margin-top: 25px;
             margin-bottom: 25px;
+            color: $gray;
         }
 
         @media (max-width: 360px) {

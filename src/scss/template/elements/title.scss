@@ -34,17 +34,13 @@
         font-weight: 550;
         line-height: 140%;
     }
-    
-    &--gray {
-        color: $text-gray;
-    }
 
     &--white {
-        color: $text-white;
+        color: $white;
     }
 
     &--black {
-        color: $text-black;
+        color: $black;
     }
 
     &--gradient {

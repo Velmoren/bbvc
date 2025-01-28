@@ -16,21 +16,13 @@
         font-weight: 400;
         line-height: 140%;
     }
-    
-    &--gray {
-        color: $text-gray;
+
+    &--white {
+        color: $white;
     }
 
     &--black {
-        color:  $text-black;
-    }
-
-    &--white {
-        color: $text-white;
-    }
-
-    &--dark-blue {
-        color: $text-dark-blue;
+        color:  $black;
     }
 
     @media (max-width: 991px) {
