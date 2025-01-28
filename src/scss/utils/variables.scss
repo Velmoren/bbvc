@@ -2,6 +2,7 @@
 $black: #002329; // rgb(0, 35, 41)
 $white: #ffffff; // rgb(255, 255, 255)
 $gray: #818181; // #818181
+$dark-gray: #234146; // rgb(35, 65, 70)
 $orange: #e35728; // rgb(227, 87, 40)
 $blue: #0ec7e7; // rgb(14, 199, 231)
 
@@ -23,7 +24,7 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 991px,
-  xl: 1320px,
+  xl: 1321px,
   xxl: 1920px,
 );
 
@@ -36,7 +37,7 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
-  28px: 28px
+  30px: 30px
 );
 $gutters: (
   0: 0,

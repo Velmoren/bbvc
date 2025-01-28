@@ -1,72 +1,105 @@
 .btn {
-    border-radius: 22px;
-    font-size: 14px;
-    line-height: 100%;
-    font-weight: 550;
-    padding: 12px 20px;
-    box-shadow: inset 0px 0px 5px 1px rgb(27, 214, 255);
-    background: radial-gradient(118.60% 110.86% at 21% -7.000000000000001%,rgb(27, 214, 255),rgb(38, 176, 254) 100%);
+    border-radius: 30px;
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: 400;
     border-width: 0;
-    color: $text-white;
+    padding: 20px;
+    background-color: $orange;
+    color: $white;
 
     &:hover {
-        background-color: $text-dark-blue;
-        color: $text-white;
+        background-color: darken($color: $orange, $amount: 10%);
+        color: $white;
     }
 
-    &.btn-outline {
-        box-shadow: none;
-        background: transparent;
-        color: $text-white;
-        border-color: $text-white;
-        border-width: 1px;
-
-        &:hover {
-            background: $text-dark-blue;
-            color: $text-white;
-            border-color: $text-dark-blue;
-        }
-    }   
-
-    &.btn-info {
-        box-shadow: none;
-        background: $text-white;
-        color: $text-dark-blue;
-
-        &:hover {
-            background: $text-dark-blue;
-            color: $text-white;
-        }
+    &.btn--md {
+        border-radius: 20px;
+        padding: 10px 20px;
     }
 
-    &.btn--blue {
-        box-shadow: none;
-        background: $primary;
-        color: $text-white;
+    &.btn--arrow {
+        position: relative;
+        padding: 20px 76px 20px 20px;
 
-        &:hover {
-            background: $text-white;
-            color: $text-dark-blue;
+        &::before {
+            content: "";
+            position: absolute;
+            right: 4px;
+            top: calc(50% - 26px);
+            display: block;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background-color: $white;
+            background-image: url("data:image/svg+xml,%3Csvg width='52' height='52' viewBox='0 0 52 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.6377 31.3622L30.6377 21.3622' stroke='%23E35728' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M31.3623 29.8301V20.6378H22.1699' stroke='%23E35728' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
         }
     }
 
-    &.btn--lg {
-        border-radius: 30px;
-        font-size: 18px;
-        line-height: 100%;
-        font-weight: 550;
-        padding: 21px 50px;
+    &.btn--dark {
+        background-color: $black;
+    
+        &:hover {
+            background-color: lighten($color: $black, $amount: 10%);
+        }
+
+        &::before {
+            background-image: url("data:image/svg+xml,%3Csvg width='52' height='52' viewBox='0 0 52 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.6377 31.3623L30.6377 21.3623' stroke='%23002329' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M31.3623 29.8301V20.6377H22.1699' stroke='%23002329' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        }
     }
 
-    &.btn--sm {
-        border-radius: 10px;
-        font-size: 14px;
-        line-height: 14px;
-        font-weight: 550;
-        padding: 8px 20px;
-    }
+    // &.btn-outline {
+    //     box-shadow: none;
+    //     background: transparent;
+    //     color: $text-white;
+    //     border-color: $text-white;
+    //     border-width: 1px;
+
+    //     &:hover {
+    //         background: $text-dark-blue;
+    //         color: $text-white;
+    //         border-color: $text-dark-blue;
+    //     }
+    // }   
+
+    // &.btn-info {
+    //     box-shadow: none;
+    //     background: $text-white;
+    //     color: $text-dark-blue;
+
+    //     &:hover {
+    //         background: $text-dark-blue;
+    //         color: $text-white;
+    //     }
+    // }
+
+    // &.btn--blue {
+    //     box-shadow: none;
+    //     background: $primary;
+    //     color: $text-white;
+
+    //     &:hover {
+    //         background: $text-white;
+    //         color: $text-dark-blue;
+    //     }
+    // }
 
     &:active {
         box-shadow: none !important;
+    }
+
+    @media (max-width: 480px) {
+        &.-responsive {
+            &.btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            &.btn--arrow {
+                padding: 20px 76px;
+            }
+        }
     }
 }

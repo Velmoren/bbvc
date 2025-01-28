@@ -1,126 +1,64 @@
 .hero {
-    padding-top: 40px !important;
-    padding-bottom: 0 !important;
-    margin-bottom: 90px;
+    padding-top: 110px;
+    padding-bottom: 0;
 
-    &.trading-hero {
-        background-image: url(/images/hero/tradings-hero-bg.png);
+    &.main-hero {
+        background-color: $black;
+        background-image: url('/images/hero/main-hero-bg.png');
         background-repeat: no-repeat;
-        background-position: calc(50% + 300px) bottom;
+        background-position: calc(50% + 400px) bottom;
+        padding-top: 210px;
+        padding-bottom: 268px;
+        margin-bottom: 260px;
+
+        .title-group {
+            .title {
+                margin-bottom: 30px;
+            }
+
+            .text {
+                margin-bottom: 30px;
+            }
+        }
     }
 
-    &.partner-hero {
-        background-image: url(/images/hero/partner-hero-bg.png);
-        background-repeat: no-repeat;
-        background-position: calc(50% + 300px) bottom;
-    }
+    // &.trading-hero {
+    //     background-image: url(/images/hero/tradings-hero-bg.png);
+    //     background-repeat: no-repeat;
+    //     background-position: calc(50% + 300px) bottom;
+    // }
 
-    &.deposit-hero {
-        background-image: url(/images/hero/deposit-hero-bg.png);
-        background-repeat: no-repeat;
-        background-position: calc(50% + 300px) bottom;
-    }
-
-    &.pamm-hero {
-        background-image: url(/images/hero/pamm-hero-bg.png);
-        background-repeat: no-repeat;
-        background-position: calc(50% + 300px) bottom;
-    }
-
-    &__title-group {
-        margin-top: 130px;
-        margin-bottom: 60px;
-        align-items: flex-start;
-    }
-
-    &__title {
-        margin-bottom: 15px;
-    }
-
-    &__subtitle {
-        margin-bottom: 30px;
+    @media (max-width: 1320px) {
+        &.main-hero {
+            padding-top: 140px;
+            padding-bottom: 140px;
+            margin-bottom: 320px;
+            background-position: calc(50% + 300px) bottom;
+            background-size: 870px;
+        }
     }
 
     @media (max-width: 991px) {
-        padding-top: 60px !important;
-
-        &.trading-hero {
+        &.main-hero {
+            padding-top: 90px;
+            padding-bottom: 490px;
+            margin-bottom: 270px;
             background-position: center bottom;
-            background-size: 534px;
+            background-size: 820px;
         }
-    
-        &.partner-hero {
+    }
+
+    @media (max-width: 768px) {
+        &.main-hero {
+            padding-top: 70px;
+            padding-bottom: 330px;
+            margin-bottom: 320px;
             background-position: center bottom;
-            background-size: 534px;
-        }
-
-        &.deposit-hero {
-            background-position: center bottom;
-            background-size: 534px;
-        }
-
-        &.pamm-hero {
-            background-position: center bottom;
-            background-size: 534px;
-        }
-
-        &__title-group {
-            margin-top: 0;
-            margin-bottom: 363px;
-            align-items: center;
-        }
-
-        &__title {
-            text-align: center;
-        }
-    
-        &__subtitle {
-            text-align: center;
+            background-size: 480px;
         }
     }
 
     @media (max-width: 480px) {
-        &.trading-hero {
-            background-size: 450px;
-        }
-    
-        &.partner-hero {
-            background-size: 450px;
-        }
 
-        &.deposit-hero {
-            background-size: 450px;
-        }
-
-        &.pamm-hero {
-            background-size: 450px;
-        }
-
-        &__title-group {
-            margin-bottom: 300px;
-        }
-    }
-
-    @media (max-width: 360px) {
-        &.trading-hero {
-            background-size: 330px;
-        }
-    
-        &.partner-hero {
-            background-size: 330px;
-        }
-
-        
-        &.deposit-hero {
-            background-size: 330px;
-        }
-
-        &.pamm-hero {
-            background-size: 330px;
-        }
-
-        &__title-group {
-            margin-bottom: 210px;
-        }
     }
 }

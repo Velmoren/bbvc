@@ -1,51 +1,39 @@
 .text {
     &--lg {
         font-size: 24px;
+        line-height: 140%;
         font-weight: 400;
-        line-height: 120%;
     }
 
     &--md {
-        font-size: 18px;
-        font-weight: 400;
+        font-size: 20px;
         line-height: 120%;
+        font-weight: 400;
     }
 
     &--sm {
         font-size: 16px;
-        font-weight: 400;
         line-height: 140%;
+        font-weight: 400;
     }
 
-    &--white {
-        color: $white;
-    }
-
-    &--black {
-        color:  $black;
-    }
-
-    @media (max-width: 991px) {
-        &--lg {
-            font-size: 20px;
-        }
-    
-        &--md {
-            font-size: 18px;
-        }
-    
-        &--sm {
-            font-size: 14px;
-        }
-    }
-
-    @media (max-width: 576px) {
-        &--lg {
-            font-size: 20px;
-        }
-    
+    @media (max-width: 1320px)  {
         &--md {
             font-size: 16px;
+        }
+
+        &--sm {
+            font-size: 14px;  
+        }
+    }
+
+    @media (max-width: 768px) {
+        &--lg {
+            font-size: 20px;
+        }
+    
+        &--md {
+            font-size: 14px;
         }
     }
 
@@ -53,14 +41,8 @@
         &--lg {
             font-size: 16px;
         }
-    
-        &--md {
-            font-size: 14px;
-        }
-    }
 
-    @media (max-width: 360px) {
-        &--lg {
+        &--md {
             font-size: 14px;
         }
     }
