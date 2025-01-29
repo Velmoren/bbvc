@@ -4,14 +4,12 @@
     align-items: flex-start;
     height: 100%;
     gap: 30px;
-    padding: 20px;
+    padding: 30px;
     border: 1px solid rgb(219, 232, 238);
     border-radius: 15px;
 
     &__wrapper {
-        padding: 5px;
-        border: 1px solid rgb(243, 247, 249);
-        border-radius: 20px;
+        width: 100%;
         height: 100%;
     }
 
@@ -19,14 +17,27 @@
         position: relative;
     }
 
+    &--lg {
+        gap: 20px;
+
+        .card--title {
+            margin-bottom: 144px;
+        }
+    }
+
     &--index {
-        position: absolute;
-        top: 0;
-        right: 0;
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $orange;
         font-size: 30px;
-        line-height: 120%;
-        font-weight: 550;
-        color: $text-dark-blue;
+        font-weight: 400;
+        color: $white;
+        padding-bottom: 4px;
     }
 
     &--icon {
@@ -37,38 +48,51 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: $orange;
     }
 
     &--title {
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
 
-    &:not(.card--dark) {
-        background: radial-gradient(163.00% 225.00% at 50% 0%, rgb(255, 255, 255) 17.442%, rgb(189, 231, 255) 100%);
+    &--black {
+        background: radial-gradient(circle at 100% 93%, rgba(0, 35, 41, .3) 0%, $white 70%, $white 100%);
 
-        .card--icon {
-            background: radial-gradient(107% 107% at 20.65% -7%, #1BD6FF 0%, #26B0FE 100%);
+        .card--icon, .card--index {
+            background-color: $black;
         }
     }
 
-    &.card--dark {
-        background:
-            radial-gradient(39.00% 126.00% at 50% 0%, rgb(183, 216, 246), rgb(58, 149, 239) 100%),
-            radial-gradient(163.00% 225.00% at 50% 0%, rgb(255, 255, 255) 17.442%, rgb(189, 231, 255) 100%);
+    &--orange {
+        background: radial-gradient(circle at 100% 93%, rgba(227, 87, 40, .3) 0%, $white 70%, $white 100%);
 
-        .card--icon {
-            background: $text-white;
+        .card--icon, .card--index {
+            background-color: $orange;
+        }
+    }
+
+    &--blue {
+        background: radial-gradient(circle at 100% 93%, rgba(14, 199, 231, .3) 0%, $white 70%, $white 100%);
+
+        .card--icon, .card--index {
+            background-color: $blue;
         }
     }
 
     @media (max-width: 1320px) {
-        &--index {
-            font-style: 24px;
-        }
+        padding: 25px;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
         flex-direction: row;
         gap: 20px;
+
+        &--lg {
+            gap: 20px;
+    
+            .card--title {
+                margin-bottom: 35px;
+            }
+        }
     }
 }

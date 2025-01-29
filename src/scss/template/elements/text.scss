@@ -18,6 +18,10 @@
     }
 
     @media (max-width: 1320px)  {
+        &--lg {
+            font-size: 20px;
+        }
+
         &--md {
             font-size: 16px;
         }
@@ -28,10 +32,6 @@
     }
 
     @media (max-width: 768px) {
-        &--lg {
-            font-size: 20px;
-        }
-    
         &--md {
             font-size: 14px;
         }

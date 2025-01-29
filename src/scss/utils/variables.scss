@@ -6,6 +6,8 @@ $dark-gray: #234146; // rgb(35, 65, 70)
 $orange: #e35728; // rgb(227, 87, 40)
 $blue: #0ec7e7; // rgb(14, 199, 231)
 
+$border-gray: #DADADA;
+
 $enable-shadows: true;
 $prefix: "bbvc-";
 
@@ -46,11 +48,5 @@ $gutters: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
-  10px: 10px,
-  15px: 15px,
   20px: 20px,
-  40px: 40px,
-  30px: 30px,
-  50px: 50px,
-  77px: 77px
 );
