@@ -18,7 +18,7 @@
 @import "./template/elements/buttons.scss";
 @import "./template/elements/card.scss";
 @import "./template/elements/card-big.scss";
-// @import "./template/elements/list.scss";
+@import "./template/elements/list.scss";
 // @import "./template/elements/list-marked.scss";
 // @import "./template/elements/custom-table.scss";
 // @import "./template/elements/card-info.scss";
@@ -26,6 +26,10 @@
 
 // SECTIONS
 @import "./template/sections/hero.scss";
+@import "./template/sections/asset-classes.scss";
+@import "./template/sections/banner.scss";
+@import "./template/sections/chooses.scss";
+
 // @import "./template/sections/statistic.scss";
 // @import "./template/sections/technology.scss";
 // @import "./template/sections/worldwide.scss";
@@ -33,7 +37,7 @@
 // @import "./template/sections/environment.scss";
 // @import "./template/sections/account.scss";
 // @import "./template/sections/features.scss";
-// @import "./template/sections/deposits.scss";
+// 
 // @import "./template/sections/seamlessly-trade.scss";
 // @import "./template/sections/pamm-info.scss";
 // @import "./template/sections/advantages.scss";

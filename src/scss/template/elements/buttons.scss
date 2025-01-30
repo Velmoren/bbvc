@@ -8,9 +8,9 @@
     background-color: $orange;
     color: $white;
 
-    &:hover {
-        background-color: darken($color: $orange, $amount: 10%);
-        color: $white;
+    &:hover, &:active, &:focus {
+        background-color: darken($color: $orange, $amount: 10%) !important;
+        color: $white !important;
     }
 
     &.btn--md {
@@ -38,7 +38,7 @@
         }
     }
 
-    &.btn--dark {
+    &.btn--black {
         background-color: $black;
     
         &:hover {

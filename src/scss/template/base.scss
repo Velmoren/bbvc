@@ -49,7 +49,15 @@ main {
         color: $dark-gray;
     }
 
+    &--light-gray {
+        color: $light-gray;
+    }
+
     &--gray {
         color: $gray;
+    }
+
+    &--orange {
+        color: $orange;
     }
 }

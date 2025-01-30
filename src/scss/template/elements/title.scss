@@ -1,4 +1,8 @@
 .title {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+
     &--extra-lg {
         font-size: 80px;
         line-height: 110%;
@@ -46,9 +50,13 @@
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 991px) {
         &--extra-lg {
             font-size: 54px;
+        }
+
+        &--lg {
+            font-size: 40px;
         }
     }
 

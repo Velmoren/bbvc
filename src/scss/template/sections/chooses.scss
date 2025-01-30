@@ -1,0 +1,24 @@
+.chooses {
+    &__image {
+        width: 480px;
+
+        img {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    @media (max-width: 1320px) {
+        &__image {
+            width: 340px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        &__image {
+            width: 100%;
+            max-width: 330px;
+            margin: 0 auto;
+        }
+    }
+}

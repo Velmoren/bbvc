@@ -1,17 +1,22 @@
 // // Variable overrides second
 $black: #002329; // rgb(0, 35, 41)
 $white: #ffffff; // rgb(255, 255, 255)
+$light-gray: #ECECEC; // #ECECEC
 $gray: #818181; // #818181
 $dark-gray: #234146; // rgb(35, 65, 70)
 $orange: #e35728; // rgb(227, 87, 40)
 $blue: #0ec7e7; // rgb(14, 199, 231)
 
 $border-gray: #DADADA;
+$border-light-gray: #ECECEC;
+
+$back-gray: #F5F5F5;
 
 $enable-shadows: true;
 $prefix: "bbvc-";
 
 $container-max-widths: (
+  xxxs: 100%,
   xxs: 100%,
   xs: 100%,
   sm: 480px,
@@ -21,7 +26,8 @@ $container-max-widths: (
 );
 
 $grid-breakpoints: (
-  xxs: 0,
+  xxxs: 0,
+  xxs: 360px,
   xs: 480px,
   sm: 576px,
   md: 768px,
@@ -39,6 +45,7 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
+  20px: 20px,
   30px: 30px
 );
 $gutters: (
