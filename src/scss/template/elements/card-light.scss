@@ -1,0 +1,23 @@
+.card-light {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 38px 40px;
+    border: 1px solid rgb(219, 232, 238);
+    border-radius: 20px;
+
+    &__gray {
+        background-color: $back-light-gray;
+    }
+
+    &__light-gray {
+        background-color: $back-gray;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+}

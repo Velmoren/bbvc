@@ -11,6 +11,7 @@ $border-gray: #DADADA;
 $border-light-gray: #ECECEC;
 
 $back-gray: #F5F5F5;
+$back-light-gray: #ECECEC;
 
 $enable-shadows: true;
 $prefix: "bbvc-";
@@ -46,7 +47,8 @@ $spacers: (
   4: $spacer * 1.5,
   5: $spacer * 3,
   20px: 20px,
-  30px: 30px
+  30px: 30px,
+  40px: 40px
 );
 $gutters: (
   0: 0,
@@ -55,5 +57,6 @@ $gutters: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
+  15px: 15px,
   20px: 20px,
 );

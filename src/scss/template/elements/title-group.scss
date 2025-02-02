@@ -5,7 +5,6 @@
 
     &__wrapper {
         display: flex;
-        margin-bottom: 50px;
 
         &.-responsive {
             flex-direction: row;
@@ -17,6 +16,35 @@
 
         &.-centered {
             justify-content: center;
+        }
+
+        &.splide__arrows {
+            position: relative;
+
+            .splide__arrow {
+                background-color: transparent;
+                width: 24px;
+                height: 24px;
+                display: none;
+            }
+
+            .splide__arrow--prev {
+                left: 0;
+            }
+
+            .splide__arrow--next {
+                right: 0;
+            }
+
+            .splide__arrow:hover:not(:disabled) {
+                opacity: .7;
+            }
+
+            @media (max-width: 991px) {
+                .splide__arrow {
+                    display: block;
+                }
+            } 
         }
     }
 

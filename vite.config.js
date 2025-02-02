@@ -6,7 +6,9 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
+        'main': resolve(__dirname, 'index.html'),
+        'trading': resolve(__dirname, 'trading.html'),
+        'account-types': resolve(__dirname, 'account-types.html'),
       },
     },
   },

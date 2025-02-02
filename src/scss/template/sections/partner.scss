@@ -1,0 +1,123 @@
+.partner {
+    &-wrapper {
+        position: relative;
+    }
+
+    &-row {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 30px;
+        border-radius: 30px;
+        background-color: $back-gray;
+
+        &-list {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 130px;
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: calc((100% - 530px) / 2);
+
+            &__head {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 15px;
+
+                &--icon {
+                    flex-shrink: 0;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background-color: $orange;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;  
+                }
+            }
+        }
+    }
+
+    &-image {
+        width: 420px;
+        position: absolute;
+        top: -80px;
+        left: calc(50% - 210px);
+    }
+
+    @media (max-width: 1320px) {
+        &-row {
+            &__item {
+                width: calc((100% - 380px) / 2);
+            }
+        }
+
+        &-image {
+            width: 360px;
+            top: -70px;
+            left: calc(50% - 180px);
+        }
+    }
+
+    @media (max-width: 991px) {
+        &-row {
+            flex-direction: column;
+            padding: 0;
+
+            &-list {
+                row-gap: 0;
+            }
+
+            &__item {
+                width: calc(100% - 360px);
+                padding: 20px;
+                gap: 20px;
+            }
+
+            &:not(:first-child) {
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+
+            &:not(:last-child) {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
+
+        &-image {
+            width: 360px;
+            top: -70px;
+            left: calc(100% - 360px);
+        }
+    }
+
+    @media (max-width: 768px) {
+        &-row {
+            &-list {
+                margin-bottom: 50px;
+            }
+
+            &__item {
+                width: 100%;
+            }
+        }
+
+        &-image {
+            position: static;
+            margin: 0 auto;
+            width: 290px;
+            max-width: calc(100% - 40px);
+        }
+    }
+
+    @media (max-width: 480px) {
+  
+    }
+}

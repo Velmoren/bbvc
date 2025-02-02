@@ -1,0 +1,24 @@
+.account-types {
+    &__slider {
+        .splide__list {
+            display: flex !important;
+            justify-content: space-between;
+            align-items: center;
+            align-items: stretch;
+
+            .splide__slide {
+                width: calc((100% - (24px * 2)) / 3);
+            }
+        }
+    }
+
+    @media (max-width: 991px)  {
+        &__slider {
+            .splide__list {
+                .splide__slide {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}

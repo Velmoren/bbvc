@@ -21,9 +21,13 @@ main {
     flex-grow: 1;
 }
 
-.section {
+section {
     padding-top: 150px;
     padding-bottom: 150px;
+
+    &.gray__bg {
+        background-color: $back-gray;
+    }
 
     @media (max-width: 768px) {
         padding-top: 120px;
@@ -34,6 +38,10 @@ main {
         padding-top: 100px;
         padding-bottom: 100px;
     }
+}
+
+img {
+    max-width: 100%;
 }
 
 .color {

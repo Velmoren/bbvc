@@ -10,16 +10,16 @@
     }
 
     @media (max-width: 991px) {
-        &.section {
-            padding-bottom: 20px;
-        }   
+        // &.section {
+        //     padding-bottom: 20px;
+        // }   
 
-        &-desktop {
-            display: none;
-        }
+        // &-desktop {
+        //     display: none;
+        // }
     
-        &-mobile {
-            display: block;  
-        }
+        // &-mobile {
+        //     display: block;  
+        // }
     }
 }

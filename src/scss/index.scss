@@ -8,6 +8,7 @@
 @import "./template/footer";
 
 // ANIMATIONS
+@import "@splidejs/splide/css";
 @import "./libs/animate.min.css";
 @import "./libs/hover.css";
 
@@ -18,17 +19,21 @@
 @import "./template/elements/buttons.scss";
 @import "./template/elements/card.scss";
 @import "./template/elements/card-big.scss";
+@import "./template/elements/card-light.scss";
+@import "./template/elements/card-list.scss";
 @import "./template/elements/list.scss";
+@import "./template/elements/icon.scss";
 // @import "./template/elements/list-marked.scss";
 // @import "./template/elements/custom-table.scss";
 // @import "./template/elements/card-info.scss";
 // @import "./template/elements/form-control.scss";
-
+ 
 // SECTIONS
 @import "./template/sections/hero.scss";
-@import "./template/sections/asset-classes.scss";
 @import "./template/sections/banner.scss";
 @import "./template/sections/chooses.scss";
+@import "./template/sections/partner.scss";
+@import "./template/sections/account-types.scss";
 
 // @import "./template/sections/statistic.scss";
 // @import "./template/sections/technology.scss";

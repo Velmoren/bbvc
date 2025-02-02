@@ -11,6 +11,13 @@
     }
 
     &--lg {
+        font-size: 70px;
+        line-height: 110%;
+        font-weight: 400;
+        letter-spacing: -2px;
+    }
+
+    &--md {
         font-size: 60px;
         line-height: 110%;
         font-weight: 400;
@@ -41,7 +48,7 @@
             font-size: 70px;
         }
 
-        &--lg {
+        &--md {
             font-size: 50px;
         }
     
@@ -54,9 +61,19 @@
         &--extra-lg {
             font-size: 54px;
         }
+    }
 
-        &--lg {
+    @media (max-width: 768px) {
+        &--extra-lg {
             font-size: 40px;
+        }
+
+        &--md {
+            font-size: 40px;
+        }
+
+        &--sm {
+            font-size: 24px;
         }
     }
 
@@ -65,8 +82,8 @@
             font-size: 40px;
         }
 
-        &--lg {
-            font-size: 40px;
+        &--md {
+            font-size: 32px;
         }
 
         &--sm {
