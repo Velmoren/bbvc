@@ -9,6 +9,7 @@ export default defineConfig({
         'main': resolve(__dirname, 'index.html'),
         'trading': resolve(__dirname, 'trading.html'),
         'account-types': resolve(__dirname, 'account-types.html'),
+        'forex-trading': resolve(__dirname, 'forex-trading.html'),
       },
     },
   },

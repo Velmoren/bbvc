@@ -1,0 +1,32 @@
+.bg-block {
+    &--lg {
+        padding: 30px;
+        border-radius: 30px;
+    }
+
+    &--md {
+        padding: 20px 30px;
+        border-radius: 30px;
+    }
+
+    &--sm {
+        padding: 12px 10px;
+        border-radius: 20px;
+    }
+
+    &--inline {
+        display: inline-block;
+    }
+
+    &--light-gray {
+        background-color: $back-gray;
+    }
+
+    &--dark-gray {
+        background-color: $dark-gray;
+    }
+
+    &--orange {
+        background-color: $orange;
+    }
+}

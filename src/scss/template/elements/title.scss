@@ -25,6 +25,13 @@
     }
 
     &--sm {
+        font-size: 50px;
+        line-height: 110%;
+        font-weight: 400;
+        letter-spacing: -2px;
+    }
+
+    &--extra-sm {
         font-size: 40px;
         line-height: 110%;
         font-weight: 400;
@@ -51,8 +58,12 @@
         &--md {
             font-size: 50px;
         }
-    
+
         &--sm {
+
+        }
+    
+        &--extra-sm {
             font-size: 30px;
         }
     }
@@ -73,6 +84,10 @@
         }
 
         &--sm {
+            
+        }
+
+        &--extra-sm {
             font-size: 24px;
         }
     }
@@ -87,6 +102,10 @@
         }
 
         &--sm {
+            font-size: 40px;
+        }
+
+        &--extra-sm {
             font-size: 24px;
         }
     }

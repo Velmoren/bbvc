@@ -17,6 +17,12 @@
         font-weight: 400;
     }
 
+    &--extra-md {
+        font-size: 18px;
+        line-height: 140%;
+        font-weight: 400;
+    }
+
     &--sm {
         font-size: 16px;
         line-height: 140%;
@@ -45,7 +51,7 @@
 
     @media (max-width: 480px) {
         &--lg {
-            font-size: 16px;
+            font-size: 18px;
         }
 
         &--md {
