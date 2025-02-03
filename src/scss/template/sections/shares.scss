@@ -1,0 +1,17 @@
+.shares {
+    background-color: $black;
+    background-image: url('/images/globe.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 820px;
+
+    @media (max-width: 1320px) {
+        background-size: 500px;
+    }
+
+    @media (max-width: 1320px) {
+        padding-bottom: 250px;
+        background-position: center calc(100% + 120px);
+        background-size: 560px;
+    }
+}

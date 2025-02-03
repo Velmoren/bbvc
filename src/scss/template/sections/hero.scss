@@ -90,6 +90,56 @@
         padding-top: 110px;
         padding-bottom: 110px;
     }
+
+    &.futures-trading-hero {
+        background-color: $black;
+        background-image: url(/images/hero/futures-trading-hero-bg.png);
+        background-repeat: no-repeat;
+        background-position: calc(50% + 300px) bottom;
+        background-size: contain;
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
+
+    &.spot-indices-hero {
+        background-color: $black;
+        background-image: url(/images/hero/spot-indices-hero-bg.png);
+        background-repeat: no-repeat;
+        background-position: calc(50% + 300px) bottom;
+        background-size: contain;
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
+
+    &.shares-and-stocks-hero {
+        background-color: $black;
+        background-image: url(/images/hero/shares-and-stocks-hero-bg.png);
+        background-repeat: no-repeat;
+        background-position: calc(50% + 300px) bottom;
+        background-size: contain;
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
+
+    &.precious-metals-hero {
+        background-color: $black;
+        background-image: url(/images/hero/precious-metals-hero-bg.png);
+        background-repeat: no-repeat;
+        background-position: calc(50% + 300px) bottom;
+        background-size: contain;
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
+
+    &.cfds-on-energy-hero {
+        background-color: $black;
+        background-image: url(/images/hero/cfds-on-energy-hero-bg.png);
+        background-repeat: no-repeat;
+        background-position: calc(50% + 300px) bottom;
+        background-size: contain;
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
     
     @media (max-width: 1320px) {
         &.main-hero {
@@ -101,6 +151,41 @@
         }
 
         &.trading-hero {
+            background-position: calc(50% + 330px) bottom;
+            background-size: contain;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        &.futures-trading-hero {
+            background-position: calc(50% + 330px) bottom;
+            background-size: contain;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        &.spot-indices-hero {
+            background-position: calc(50% + 330px) bottom;
+            background-size: contain;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        &.shares-and-stocks-hero {
+            background-position: calc(50% + 330px) bottom;
+            background-size: contain;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    
+        &.precious-metals-hero {
+            background-position: calc(50% + 330px) bottom;
+            background-size: contain;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        &.cfds-on-energy-hero {
             background-position: calc(50% + 330px) bottom;
             background-size: contain;
             padding-top: 60px;
@@ -136,6 +221,41 @@
             padding-top: 80px;
             padding-bottom: 420px;
         }
+
+        &.futures-trading-hero {
+            background-position: center bottom;
+            background-size: 600px;
+            padding-top: 80px;
+            padding-bottom: 540px;
+        }
+
+        &.spot-indices-hero {
+            background-position: center bottom;
+            background-size: 600px;
+            padding-top: 80px;
+            padding-bottom: 420px;
+        }
+
+        &.shares-and-stocks-hero {
+            background-position: center bottom;
+            background-size: 600px;
+            padding-top: 80px;
+            padding-bottom: 420px;
+        }
+    
+        &.precious-metals-hero {
+            background-position: center bottom;
+            background-size: 600px;
+            padding-top: 80px;
+            padding-bottom: 420px;
+        }
+
+        &.cfds-on-energy-hero {
+            background-position: center bottom;
+            background-size: 600px;
+            padding-top: 80px;
+            padding-bottom: 420px;
+        }
     }
 
     @media (max-width: 768px) {
@@ -162,10 +282,39 @@
         }
 
         &.trading-hero {
-            background-image: url(/images/hero/tradings-hero-bg-mobile.png);
             background-size: 480px;
             padding-top: 70px;
             padding-bottom: 240px;
+        }
+
+        &.futures-trading-hero {
+            background-size: 480px;
+            padding-top: 70px;
+            padding-bottom: 340px;
+        }
+
+        &.spot-indices-hero {
+            background-size: 480px;
+            padding-top: 70px;
+            padding-bottom: 340px;
+        }
+
+        &.shares-and-stocks-hero {
+            background-size: 480px;
+            padding-top: 70px;
+            padding-bottom: 340px;
+        }
+    
+        &.precious-metals-hero {
+            background-size: 480px;
+            padding-top: 70px;
+            padding-bottom: 340px;
+        }
+
+        &.cfds-on-energy-hero {
+            background-size: 480px;
+            padding-top: 70px;
+            padding-bottom: 340px;
         }
 
         &-variables {
