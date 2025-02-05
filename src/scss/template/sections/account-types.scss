@@ -1,4 +1,23 @@
 .account-types {
+    .container {
+        @media (max-width: 991px) {
+            max-width: 100%;
+            padding: 0;
+            
+            .title-group__wrapper {
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .title-group__wrapper {
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+        }
+    }
+
     &__slider {
         .splide__list {
             display: flex !important;
@@ -17,6 +36,7 @@
             .splide__list {
                 .splide__slide {
                     width: 300px;
+                    max-width: calc(100% - 15px);
                 }
             }
         }

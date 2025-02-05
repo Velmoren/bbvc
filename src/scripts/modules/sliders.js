@@ -12,9 +12,14 @@ export const slidersModule = () => {
             prev  : 'account-types__arrow__left',
             next  : 'splide__arrow--next your-class-next',
             breakpoints: {
-                990: {
+                991: {
                     destroy: false,
+                    padding: { left: 40 },
                     gap: '20px'
+                },
+
+                767: {
+                    padding: { left: 15 }
                 },
             }
         }).mount();
