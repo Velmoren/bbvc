@@ -43,11 +43,11 @@
             font-size: 20px;
             line-height: 120%;
             font-weight: 400;
-            margin-top: 20px;
+            margin-top: 30px;
         }
 
         .btn {
-            margin-top: 20px;
+            margin-top: 30px;
         }
     }
 
@@ -140,6 +140,17 @@
         padding-top: 110px;
         padding-bottom: 110px;
     }
+
+    
+    &.ndd-execution-hero {
+        background-color: $black;
+        background-image: url(/images/hero/ndd-execution-hero-bg.png);
+        background-repeat: no-repeat;
+        background-position: calc(50% + 300px) bottom;
+        background-size: contain;
+        padding-top: 160px;
+        padding-bottom: 160px;
+    }
     
     @media (max-width: 1320px) {
         &.main-hero {
@@ -190,6 +201,16 @@
             background-size: contain;
             padding-top: 60px;
             padding-bottom: 60px;
+        }
+
+        .title-group {
+            .text {
+                margin-top: 20px;
+            }
+    
+            .btn {
+                margin-top: 20px;
+            }
         }
     }
 

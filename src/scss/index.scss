@@ -13,28 +13,26 @@
 @import "./libs/hover.css";
 
 // ELEMENTS
-@import "./template/elements/title.scss";
-@import "./template/elements/text.scss";
-@import "./template/elements/title-group.scss";
+@import "./template/elements/bg-block.scss";
 @import "./template/elements/buttons.scss";
-@import "./template/elements/card.scss";
 @import "./template/elements/card-big.scss";
 @import "./template/elements/card-light.scss";
 @import "./template/elements/card-list.scss";
-@import "./template/elements/list.scss";
+@import "./template/elements/card.scss";
 @import "./template/elements/icon.scss";
-@import "./template/elements/bg-block.scss";
 @import "./template/elements/list-marked.scss";
-// @import "./template/elements/custom-table.scss";
-// @import "./template/elements/card-info.scss";
-// @import "./template/elements/form-control.scss";
+@import "./template/elements/list.scss";
+@import "./template/elements/title-group.scss";
+@import "./template/elements/text.scss";
+@import "./template/elements/title.scss";
 
 // SECTIONS
-@import "./template/sections/hero.scss";
+@import "./template/sections/account-types.scss";
 @import "./template/sections/banner.scss";
 @import "./template/sections/chooses.scss";
+@import "./template/sections/hero.scss";
+@import "./template/sections/info.scss";
 @import "./template/sections/partner.scss";
-@import "./template/sections/account-types.scss";
 @import "./template/sections/shares.scss";
 
 // @import "./template/sections/statistic.scss";

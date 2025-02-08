@@ -29,6 +29,15 @@
         background-position: right bottom;
     }
 
+    &--settings {
+        background-color: $black;
+        background-image: url('/images/banner/banner-3-bg.png');
+        background-size: 500px;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        padding: 70px;
+    }
+
     @media (max-width: 1320px) {
         &__box {
             padding: 60px 60px;
@@ -37,8 +46,12 @@
         .title-group {
             max-width: 380px;
         }
-    }
 
+        &--settings {
+            padding: 60px;
+        }
+    }
+    
     @media (max-width: 991px) {
         &--orange {
             padding: 60px 50px;
@@ -47,6 +60,16 @@
         &--black {
             background-size: 400px;
             padding: 60px 50px 430px 50px;
+
+            .title-group {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        &--settings {
+            background-size: 490px;
+            padding: 60px 60px 400px 60px;
 
             .title-group {
                 max-width: 100%;
@@ -76,6 +99,11 @@
             background-size: 300px;
             padding: 40px 25px 330px 25px;
         }
+
+        &--settings {
+            background-size: 490px;
+            padding: 40px 25px 400px 25px;
+        }
     }
 
     @media (max-width: 480px) {
@@ -88,6 +116,11 @@
         &--black {
             background-size: 210px;
             padding-bottom: 240px;
+        }
+
+        &--settings {
+            background-size: 330px;
+            padding-bottom: 270px;
         }
     }
 }

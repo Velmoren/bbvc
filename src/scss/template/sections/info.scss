@@ -1,0 +1,84 @@
+.info {
+    &__image {
+        img {
+            width: 520px;
+        }
+    }
+
+    &--globe {
+        background-image: url('/images/globe-2.png');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        padding-bottom: 300px;
+    }
+
+    &--check {
+        background-image: url('/images/info/image-2.png');
+        background-repeat: no-repeat;
+        background-position: calc(50% + 300px) top;
+    }
+
+    &__list {
+        padding-left: 60px;
+
+        li {
+            position: relative;
+
+            &::before {
+                content: "";
+                display: block;
+                width: 40px;
+                height: 40px;
+                background-image: url('/images/icons/elipse-color.svg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: absolute;
+                left: -60px;
+                top: 5px;
+            }
+        }
+    }
+
+    @media (max-width: 1320px) {
+        &__image {
+            img {
+                width: 380px;
+            }
+        }
+
+        &--globe {
+            padding-bottom: 190px;
+            background-size: 930px;
+        }
+
+        &--check {
+            background-image: url('/images/info/image-2.png');
+            background-repeat: no-repeat;
+            background-position: right top;
+        }
+    }
+
+    @media (max-width: 991px) {
+        &__image {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+
+            img {
+                width: 380px;
+            }
+        }
+
+        &--globe {
+            padding-bottom: 130px;
+            background-size: 690px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        &--globe {
+            padding-bottom: 100px;
+            background-size: 450px;
+        }
+    }
+}

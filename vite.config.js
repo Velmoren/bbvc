@@ -15,6 +15,7 @@ export default defineConfig({
         'shares-and-stocks': resolve(__dirname, 'shares-and-stocks.html'),
         'precious-metals': resolve(__dirname, 'precious-metals.html'),
         'cfds-on-energy': resolve(__dirname, 'cfds-on-energy.html'),
+        'ndd-execution': resolve(__dirname, 'ndd-execution.html'),
       },
     },
   },
