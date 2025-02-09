@@ -187,7 +187,17 @@
         padding-top: 160px;
         padding-bottom: 160px;
     }
-    
+
+    &.credit-rating-hero {
+        background-color: $black;
+        background-image: url('/images/hero/credit-rating-hero-bg.png');
+        background-repeat: no-repeat;
+        background-position: calc(50% + 300px) bottom;
+        background-size: contain;
+        padding-top: 160px;
+        padding-bottom: 160px;
+    }
+   
     @media (max-width: 1320px) {
         &.main-hero {
             padding-top: 140px;
@@ -254,6 +264,13 @@
         }
 
         &.payment-methods-hero {
+            background-position: calc(50% + 330px) bottom;
+            background-size: contain;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        &.credit-rating-hero {
             background-position: calc(50% + 330px) bottom;
             background-size: contain;
             padding-top: 60px;
@@ -355,6 +372,13 @@
             padding-top: 80px;
             padding-bottom: 350px;
         }
+
+        &.credit-rating-hero {
+            background-position: center bottom;
+            background-size: 600px;
+            padding-top: 80px;
+            padding-bottom: 350px;
+        }
     }
 
     @media (max-width: 768px) {
@@ -430,6 +454,12 @@
         }
 
         &.payment-methods-hero {
+            background-size: 480px;
+            padding-top: 70px;
+            padding-bottom: 340px;
+        }
+
+        &.credit-rating-hero {
             background-size: 480px;
             padding-top: 70px;
             padding-bottom: 340px;
