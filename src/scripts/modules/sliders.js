@@ -19,7 +19,7 @@ export const slidersModule = () => {
                 },
 
                 767: {
-                    padding: { left: 15 }
+                    padding: { left: 15, right: 15 }
                 },
             }
         }).mount();

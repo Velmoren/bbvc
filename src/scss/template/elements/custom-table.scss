@@ -1,181 +1,149 @@
-// .custom-table {
-//     display: flex;
-//     justify-content: space-between;
-//     background: radial-gradient(163.47% 224.77% at 50% 0%, #FFFFFF 17.44%, #BDE7FF 100%);
-//     padding: 25px;
-//     border-radius: 30px;
-//     border: 1px solid #dbe8ee;
+.custom-table {
+    display: flex;
+    justify-content: space-between;
 
-//     ul {
-//         li {
-//             .table-badge {
-//                 font-size: 12px;
-//                 line-height: 14px;
-//                 font-weight: 500;
-//                 color: var(--bt-primary, #fff);
-//                 border-radius: 15px;
-//                 padding: 5px 10px;
-//                 border: 1px solid #C270F8;
-//             }
-//         }
-//     }
+    &__desc {
+        min-width: 220px;
+        display: flex;
+        flex-direction: column;
 
-//     &__desc {
-//         min-width: 346px;
-//         display: flex;
-//         flex-direction: column;
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            height: 70px;
+            padding-left: 30px;
+            cursor: pointer;
 
-//         li {
-//             display: flex;
-//             align-items: center;
-//             justify-content: flex-start;
-//             gap: 10px;
-//             height: 70px;
-//             border-top-left-radius: 15px;
-//             border-bottom-left-radius: 15px;
-//             padding-left: 20px;
-//             cursor: pointer;
+            img {
+                max-width: 66px;
+            }
 
-//             img {
-//                 max-width: 66px;
-//             }
+            &.-active {
+                // background-color: $primary-hovered;
 
-//             &.-active {
-//                 background-color: $primary-hovered;
+                span {
+                    color: white;
+                }
+            }
 
-//                 span {
-//                     color: white;
-//                 }
-//             }
-//         }
-//     }
+            &.custom-table__item--title {
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
 
-//     &__types {
-//         display: flex;
-//         width: calc(100%);
-//     }
+            &:nth-child(odd) {
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                background-color: $back-gray;
+            }
+        }
+    }
 
-//     &__item {
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         text-align: center;
-//         width: calc(100%);
+    &__types {
+        display: flex;
+        width: calc(100%);
+    }
 
-//         &--title {
-//             height: 70px;
-//             display: flex;
-//             align-items: center;
-//             justify-content: center;
-//             width: 100%;
-//             border-bottom: 1px solid #dbe8ee;
-//             border-radius: 0 !important;
-//             margin-bottom: 10px;
-//             padding-bottom: 10px;
-//         }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: calc(100%);
 
-//         &--list {
-//             display: flex;
-//             flex-direction: column;
-//             align-items: center;
-//             text-align: center;
-//             width: 100%;
+        &--title {
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            margin-bottom: 10px;
+            background-color: $orange !important;
+            color: $white;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
 
-//             li {
-//                 width: 100%;
-//                 white-space: nowrap;
-//                 height: 70px;
-//                 display: flex;
-//                 justify-content: center;
-//                 align-items: center;
-//                 column-gap: 10px;
-//                 cursor: pointer;
+        &--list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
 
-//                 &.-active {
-//                     background-color: $primary-hovered;
-//                     color: white;
+            li {
+                width: 100%;
+                height: 70px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                column-gap: 10px;
+                cursor: pointer;
+                font-size: 16px;
+                line-height: 140%;
+                font-weight: 400;
+                color: $black;
+                padding-left: 10px;
+                padding-right: 10px;
+                text-align: left;
 
-//                     .btn {
-//                         background: $text-white;
-//                         color: $text-dark-blue;  
-//                     }
-//                 }
-//             }
-//         }
+                &:nth-child(even) {
+                    background-color: $back-gray;
+                }
+            }
+        }
 
-//         &:last-child {
-//             ul {
-//                 li {
-//                     border-top-right-radius: 15px;
-//                     border-bottom-right-radius: 15px;
-//                 }
-//             }
-//         }
-//     }
+        &:last-child {
+            .custom-table__item--title {
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
 
-//     @media (max-width: 1320px) {
-//         &__desc {
-//             min-width: 250px;
-//         }
-//     }
+            ul {
+                li {
+                    &:nth-child(even) {
+                        border-top-right-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
 
-//     @media (max-width: 991px) {
-//         padding: 20px;
+    @media (max-width: 991px) {
+        &__desc {
+            min-width: 150px;
+        }
+    }
 
-//         &__desc {
-//             min-width: 190px;
+    @media (max-width: 768px) {
+        &__desc {
+            li {
+                span {
+                    font-size: 16px !important;
+                }
+            }
+        }
 
-//             li {
-//                 flex-direction: column;
-//                 align-items: flex-start;
-//                 padding-left: 0;
-//                 height: 122px;
-//                 display: flex;
-              
-//             }
-//         }
+        &__item {
+            &--title {
+                font-size: 16px !important;
+            }
 
-//         &__item {
-//             &--title {
-//                 height: 70px !important;
-//                 justify-content: center !important;
-//             }
+            &--list {
+                li {
+                    font-size: 16px !important;
+                }
+            }
+        }
 
-//             &--list {
-//                 li {
-//                     height: 122px;
-//                     white-space: inherit;
-//                 }
-//             }
-//         }
-//     }
-
-//     @media (max-width: 768px) {
-//         &__desc {
-//             li {
-//                 span {
-//                     font-size: 16px !important;
-//                 }
-//             }
-//         }
-
-//         &__item {
-//             &--title {
-//                 font-size: 16px !important;
-//             }
-
-//             &--list {
-//                 li {
-//                     font-size: 16px !important;
-//                 }
-//             }
-//         }
-
-//         &__types {
-//             overflow-x: scroll;
-//             scrollbar-width: none;
-//             display: grid;
-//             grid-template-columns: repeat(4, 120px);
-//         }
-//     }
-// }
+        &__types {
+            overflow-x: scroll;
+            scrollbar-width: none;
+            display: grid;
+            grid-template-columns: repeat(5, 120px);
+        }
+    }
+}

@@ -16,6 +16,8 @@ export default defineConfig({
         'precious-metals': resolve(__dirname, 'precious-metals.html'),
         'cfds-on-energy': resolve(__dirname, 'cfds-on-energy.html'),
         'ndd-execution': resolve(__dirname, 'ndd-execution.html'),
+        'economic-calendar': resolve(__dirname, 'economic-calendar.html'),
+        'payment-methods': resolve(__dirname, 'payment-methods.html'),
       },
     },
   },
