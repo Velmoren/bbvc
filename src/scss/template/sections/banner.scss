@@ -38,6 +38,15 @@
         padding: 70px;
     }
 
+    &--business {
+        background-color: $back-gray;
+        background-image: url('/images/banner/banner-4-bg.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        padding: 90px 60px; 
+    }
+
     @media (max-width: 1320px) {
         &__box {
             padding: 60px 60px;
@@ -76,6 +85,13 @@
                 margin-bottom: 20px;
             }
         }
+
+        &--business {
+            background-image: url('/images/banner/banner-4-bg-mobile.png');
+            background-position: right bottom;
+            background-size: 460px;
+            padding: 60px 40px 380px 40px;
+        }
     }
 
     @media (max-width: 768px) {
@@ -104,6 +120,11 @@
             background-size: 490px;
             padding: 40px 25px 400px 25px;
         }
+
+        &--business {
+            background-size: 460px;
+            padding: 60px 25px 400px 25px;
+        }
     }
 
     @media (max-width: 480px) {
@@ -121,6 +142,11 @@
         &--settings {
             background-size: 330px;
             padding-bottom: 270px;
+        }
+
+        &--business {
+            background-size: 290px;
+            padding: 40px 20px 230px 20px;
         }
     }
 }
