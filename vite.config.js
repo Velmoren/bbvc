@@ -18,6 +18,7 @@ export default defineConfig({
         'ndd-execution': resolve(__dirname, 'ndd-execution.html'),
         'economic-calendar': resolve(__dirname, 'economic-calendar.html'),
         'payment-methods': resolve(__dirname, 'payment-methods.html'),
+        'credit-rating': resolve(__dirname, 'credit-rating.html'),
       },
     },
   },
