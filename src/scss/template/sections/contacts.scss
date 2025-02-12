@@ -1,0 +1,45 @@
+.contacts {
+    padding-top: 70px;
+
+    &__form {
+        &--wrapper {
+            padding: 40px 30px;
+            background-color: $back-gray;
+            border-radius: 30px;
+        }
+
+        &--title {
+            max-width: 400px;
+        }
+    }
+
+    &__links {
+        &--item {
+            a {
+                color: $orange;
+
+                &:hover {
+                    color: darken($color: $orange, $amount: 10%);
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1320px) {
+        &__form {
+            &--wrapper {
+                padding: 30px;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        padding-top: 50px;
+
+        &__form {
+            &--wrapper {
+                padding: 20px;
+            }
+        }
+    }
+}
