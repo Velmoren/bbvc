@@ -5,6 +5,12 @@
         }
     }
 
+    &__image--2 {
+        img {
+            width: 420px;
+        }
+    }
+
     &--globe {
         background-image: url('/images/globe-2.png');
         background-repeat: no-repeat;

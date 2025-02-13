@@ -3,6 +3,10 @@
     flex-direction: column;
     align-items: flex-start;
 
+    &.-centered {
+        align-items: center;
+    }
+
     &__wrapper {
         display: flex;
 

@@ -23,6 +23,7 @@ export default defineConfig({
         'trading-tools': resolve(__dirname, 'trading-tools.html'),
         'market-analysis': resolve(__dirname, 'market-analysis.html'),
         'contacts': resolve(__dirname, 'contacts.html'),
+        'register': resolve(__dirname, 'register.html'),
       },
     },
   },

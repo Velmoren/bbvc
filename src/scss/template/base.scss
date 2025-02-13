@@ -33,6 +33,10 @@ section {
         background-color: $back-gray;
     }
 
+    &.orange__bg {
+        background-color: $orange;
+    }
+
     @media (max-width: 768px) {
         padding-top: 120px;
         padding-bottom: 120px;

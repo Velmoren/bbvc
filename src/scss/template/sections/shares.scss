@@ -5,6 +5,13 @@
     background-position: right bottom;
     background-size: 820px;
 
+    &--gray {
+        background-color: $back-gray;
+        background-image: url('/images/globe-3.png'); 
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
     @media (max-width: 1320px) {
         background-size: 500px;
     }

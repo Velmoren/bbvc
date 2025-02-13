@@ -6,6 +6,14 @@
     border: 1px solid rgb(219, 232, 238);
     border-radius: 20px;
 
+    &--sm {
+        padding: 20px;  
+
+        .card-light__content {
+            gap: 15px;
+        }
+    }
+
     &__gray {
         background-color: $back-light-gray;
     }
@@ -19,5 +27,11 @@
         align-items: center;
         justify-content: flex-start;
         gap: 15px;
+    }
+
+    .text--extra-md {
+        @media (max-width: 1320px) {
+            
+        }
     }
 }
