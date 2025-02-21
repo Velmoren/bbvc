@@ -80,17 +80,17 @@
                     font-size: 16px;
                     line-height: 22px;
                     font-weight: 500;
-                    // color: $secondary;
+                    color: $black;
 
-                    // &.active {
-                    //     background-color: $white;
-                    //     color: $secondary-hovered;
-                    // }
+                    &.active {
+                        background-color: $white;
+                        color: $orange;
+                    }
     
-                    // &:hover {
-                    //     background-color: $white;
-                    //     color: $secondary-hovered;
-                    // }
+                    &:hover {
+                        background-color: $white;
+                        color: $orange;
+                    }
 
                     &:focus-visible {
                         outline: none;

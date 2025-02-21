@@ -14,14 +14,16 @@
         text-decoration: none;
     }
 
+    hr {
+        background-color: $dark-gray;
+        border-color: $dark-gray;
+    }
+
     @media (max-width: 768px) {
         padding-top: 60px;
     }
 
     &-nav {
-        padding-bottom: 80px;
-        border-bottom: 1px solid #dbe8ee;
-
         &__main {
             display: flex;
             flex-direction: column;
@@ -130,6 +132,39 @@
                 }
               }
             }
+        }
+    }
+
+    &-creditionals {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    color: $orange;
+                }
+            }
+
+            &--socials {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
         }
     }
 
