@@ -30,7 +30,7 @@
             justify-content: flex-start;
             gap: 20px;
         }
-        
+
         &__social {
             margin-top: 20px;
             display: flex;
@@ -99,10 +99,31 @@
                     }
                 }
             }
+
+            @media (max-width: 768px) {
+                width: calc(50% - 15px);
+            }
+
+            @media (max-width: 360px) {
+                width: 100%;
+            }
         }
 
         &__box {
             row-gap: 50px;
+        }
+
+        &__wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            column-gap: 30px;
+            row-gap: 30px;
+
+            @media (max-width: 768px) {
+                flex-wrap: wrap;
+            }
         }
 
         &__bank-list {
@@ -120,17 +141,17 @@
             }
 
             @media (max-width: 990px) {
-              max-width: 100%;
-              margin-bottom: 50px;
-              flex-wrap: nowrap;
+                max-width: 100%;
+                margin-bottom: 50px;
+                flex-wrap: nowrap;
 
-              &--item  {
-                width: auto;
+                &--item {
+                    width: auto;
 
-                img {
-                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
                 }
-              }
             }
         }
     }
