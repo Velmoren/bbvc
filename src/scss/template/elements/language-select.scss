@@ -1,0 +1,115 @@
+.language-select {
+    position: relative;
+    height: 40px;
+    min-width: 68px;
+
+    &.--from-header {
+        height: 50px;
+
+        .language-select__list {
+            height: 50px;
+            padding: 14px 27px 14px 13px;
+            row-gap: 15px;
+
+            &::before {
+                right: 12px;
+                top: 20px;
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        padding: 9px 27px 9px 13px;
+        border-radius: 15px;
+        min-width: 68px;
+        height: 40px;
+        position: absolute;
+        overflow: hidden;
+        cursor: pointer;
+        border: 1px solid $orange;
+    
+        li {
+            color: $black;
+            font-size: 16px;
+            line-height: 100%;
+            font-weight: 400;
+            height: 16px;
+            order: 2;
+            opacity: .5;
+            display: flex;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                color: $black;
+                font-size: 16px;
+                line-height: 100%;
+                font-weight: 400;
+            }
+    
+            &:hover {
+                cursor: pointer;
+                opacity: 1;
+            }
+    
+            &.active {
+                order: 1;
+                opacity: 1;
+            }
+        }
+    
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 15px;
+            top: 18px;
+            background-image: url('/images/icons/arrow-down.svg');
+            background-repeat: no-repeat;
+            width: 10px;
+            height: 7px;
+        }
+    
+        &.open {
+            min-width: 68px;
+            height: auto !important;
+            background: $white;
+            padding: 9px 27px 9px 13px;
+            row-gap: 10px !important;
+    
+            li {
+                color: $black;
+
+                a {
+                    text-decoration: none;
+                    color: $black;
+                    font-size: 16px;
+                    line-height: 100%;
+                    font-weight: 400;
+                }
+    
+                &.active {
+                    order: 1;
+                    opacity: 1;
+                    cursor: default;
+                    pointer-events: none;
+                }
+            }
+    
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                right: 15px;
+                top: 15px;
+                background-image: url('/images/icons/close.svg');
+                background-repeat: no-repeat;
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+}

@@ -56,6 +56,12 @@
         }
     }
 
+    &.btn--white {
+        background-color: $white;
+        color: $black;
+        border: 1px solid $orange;
+    }
+
     &.btn--outline {
         background-color: $black;
         color: $orange;
@@ -73,6 +79,11 @@
 
         }
     }   
+
+    &.--from-header {
+        min-height: 50px;
+        padding: 13px 20px;
+    }
 
     &:active {
         box-shadow: none !important;
