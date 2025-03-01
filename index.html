@@ -11,8 +11,8 @@
   <link rel="manifest" href="https://velmoren.github.io/bbvc/site.webmanifest" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BBVC</title>
-  <script type="module" crossorigin src="https://velmoren.github.io/bbvc/assets/main-LiipjP1N.js"></script>
-  <link rel="stylesheet" crossorigin href="https://velmoren.github.io/bbvc/assets/main-B-4aeW7a.css">
+  <script type="module" crossorigin src="https://velmoren.github.io/bbvc/assets/main-oTYWEKBb.js"></script>
+  <link rel="stylesheet" crossorigin href="https://velmoren.github.io/bbvc/assets/main-Cw9ki6km.css">
 </head>
 
 <body>
@@ -21,15 +21,37 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
           <div class="container-fluid p-0">
+
             <a class="navbar-brand header-logo" href="/era-of-superio-dev/">
-              <img class="logo-image" src="https://velmoren.github.io/bbvc/images/logo.svg" alt="logo">
+              <img class="logo-image" src="https://velmoren.github.io/bbvc/images/logo-image.svg" alt="logo">
+              <span class="logo-text">E <span></span> fxmc</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+
+            <div class="navbar-toggler-container">
+              <div class="header-controls">
+                <a href="/" class="btn btn--white btn--md --from-header d-none d-md-block d-lg-none">Registration</a>
+
+                <a href="#" class="btn btn--md --from-header d-none d-xxs-block d-lg-none">Login</a>
+
+                <div class="language-select --from-header d-none d-md-block d-lg-none">
+                  <ul class="language-select__list">
+                    <!-- если необходима ссылка - обернуть текст в <a>Рус</a> -->
+                    <li class="active" data-language="ru">
+                      <a href="/">Рус</a>
+                    </li>
+                    <li data-language="en">Eng</li>
+                  </ul>
+                </div>
+              </div>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
               aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
               <span></span>
               <span></span>
               <span></span>
             </button>
+            </div>
+
             <div class="collapse navbar-collapse" id="navbarScroll">
               <ul class="navbar-nav m-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                 <li class="nav-item dropdown">
@@ -68,7 +90,16 @@
               </ul>
 
               <div class="header-controls">
-                <button class="btn btn--md">Log in / Sign Up</button>
+                <a href="/" class="btn btn--white btn--md d-block d-md-none d-lg-block">Registration</a>
+                <a href="/" class="btn btn--md d-block d-xxs-none d-lg-block">Login</a>
+
+                <div class="language-select d-block d-md-none d-lg-block">
+                  <ul class="language-select__list">
+                    <!-- если необходима ссылка - обернуть текст в <a>Рус</a> -->
+                    <li class="active" data-language="ru">Рус</li>
+                    <li data-language="en">Eng</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -537,8 +568,10 @@
         <div class="row footer-nav">
           <div class="col col-12 col-lg-5">
             <div class="footer-nav__main h-100">
-              <a class="footer-nav__logo footer-logo" href="/">
-                <img class="logo-image" src="https://velmoren.github.io/bbvc/images/logo-dark.svg" alt="logo">
+
+              <a class="footer-nav__logo footer-logo" href="/era-of-superio-dev/">
+                <img class="logo-image" src="https://velmoren.github.io/bbvc/images/logo-image.svg" alt="logo">
+                <span class="logo-text">E <span></span> fxmc</span>
               </a>
 
               <div class="footer-nav__bank-list">
