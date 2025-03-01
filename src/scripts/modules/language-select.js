@@ -1,8 +1,7 @@
 export const languageSelectModule = () => {
-  const select = document.querySelector(".language-select > .language-select__list");
+  const selects = document.querySelectorAll(".language-select > .language-select__list");
 
-
-  if (select) {
+  selects.forEach(select => {
     const listItems = select.querySelectorAll("li");
 
     select.addEventListener("click", () => {
@@ -31,5 +30,20 @@ export const languageSelectModule = () => {
         });
       });
     });
-  }
+  })
+
+  window.addEventListener('click', (event) => {
+    if (!event.target.closest('.language-select')) {
+      selects.forEach(select => {
+        select.classList.remove("open");
+      })
+    }
+  })
+  window.addEventListener('resize', () => {
+    console.log('asdasd');
+    
+    selects.forEach(select => {
+      select.classList.remove("open");
+    })
+  })
 };
