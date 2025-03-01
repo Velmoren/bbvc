@@ -21,7 +21,7 @@
     &__list {
         display: flex;
         flex-direction: column;
-        row-gap: 10px;
+        row-gap: 14px;
         padding: 9px 27px 9px 13px;
         border-radius: 15px;
         min-width: 68px;
@@ -78,7 +78,7 @@
             height: auto !important;
             background: $white;
             padding: 9px 27px 9px 13px;
-            row-gap: 10px !important;
+            row-gap: 14px !important;
     
             li {
                 color: $black;
