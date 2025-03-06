@@ -24,6 +24,7 @@ export default defineConfig({
         'market-analysis': resolve(__dirname, 'market-analysis.html'),
         'contacts': resolve(__dirname, 'contacts.html'),
         'register': resolve(__dirname, 'register.html'),
+        '404': resolve(__dirname, '404.html'),
       },
     },
   },

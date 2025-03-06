@@ -3,6 +3,13 @@
     align-items: flex-end;
     gap: 20px;
 
+    &--great {
+        font-size: 100px;
+        line-height: 110%;
+        font-weight: 400;
+        letter-spacing: -2px;
+    }
+
     &--extra-lg {
         font-size: 80px;
         line-height: 110%;
@@ -51,6 +58,10 @@
     }
 
     @media (max-width: 1320px) {
+        &--great {
+            font-size: 80px;
+        }
+
         &--extra-lg {
             font-size: 70px;
         }
@@ -104,6 +115,10 @@
     }
 
     @media (max-width: 480px) {
+        &--great {
+            font-size: 60px;
+        }
+
         &--extra-lg {
             font-size: 40px;
         }
